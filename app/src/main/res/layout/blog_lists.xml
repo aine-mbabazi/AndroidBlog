@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginTop="30dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imBookCover"
+            android:layout_width="130dp"
+            android:layout_height="182dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.056"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imAuthor"
+            app:layout_constraintVertical_bias="0.173"
+            app:srcCompat="@drawable/bookblog3" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="80dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="148dp"
+            android:text="Description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imBookCover" />
+
+        <TextView
+            android:id="@+id/tvFullDescription"
+            android:layout_width="177dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="8dp"
+            android:text="Brielle of Thornbrook has dedicated her life to the abbey. She spends her days forging iron and her evenings studying the Text, all in preparation of becoming an acolyte."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.42"
+            app:layout_constraintStart_toEndOf="@+id/imBookCover"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Read More"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toEndOf="@+id/imBookCover"
+            app:layout_constraintTop_toBottomOf="@+id/tvFullDescription" />
+
+        <ImageView
+            android:id="@+id/imAuthor"
+            android:layout_width="102dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.051"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBlogName"
+            app:srcCompat="@drawable/author" />
+
+        <TextView
+            android:id="@+id/tvAuthorName"
+            android:layout_width="197dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="8dp"
+            android:text="Author : Alexandria Warwick"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imAuthor"
+            app:layout_constraintTop_toTopOf="@+id/imAuthor" />
+
+        <TextView
+            android:id="@+id/tvYearOfPublication"
+            android:layout_width="190dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Year Of Publication : 2022"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imAuthor"
+            app:layout_constraintTop_toBottomOf="@+id/tvAuthorName" />
+
+        <TextView
+            android:id="@+id/tvBlogName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="The Artsy Reader Girl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
